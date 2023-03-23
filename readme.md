@@ -38,7 +38,7 @@
 <br>
 
 <h2 id="sample-video">Sample Video 🎥</h2>
-<img src="./demoData/mailBotdemo.gif" alt="..." />
+<img src="https://github.com/saif977/mailbot/blob/main/demoData/mailBotDemo.gif" alt="..." />
 
 
 
