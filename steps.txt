@@ -1,0 +1,19 @@
+=> make login system using oauth2. (DONE)
+
+=> retrieve all the unread and unreplied emails.   (DONE)
+  =>=> GET ALL THREADS HAVING LABEL (UNREAD) AND NOT HAVING LABEL (automatedReplied)
+   [THIS IS BETTER THAN GETTING ALL UNREAD MESSAGES AND THEN CHECKING ITS THREADS.MESSAGES LENGTH === 1 OR NOT]  (NOT SURE YET)
+
+=> create a automated message and reply back to all above threads. (DONE)
+
+=> remove labels unread and unreplied from all the above threads. (DONE) 
+  =>=> NO NEED TO REMOVE LABEL UNREAD(SO THAT A USER CAN READ IT AFTERWARDS). either we can add new label to that thread.
+
+=> add another label names [automatedReplied] and add to all the above threads. [DONE]
+
+=> make a cron job that runs in every 30 secs and perform all the above operations. [in process]
+=> ALSO HAVE TO CHANGE STRUCTURE OF THE PROJECT AFTER MAKING CRON JOB.
+
+    
+=> change the structure of the project and the add a readme file
+ 

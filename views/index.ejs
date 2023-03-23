@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>mailBot</title>
+    </head>
+    <script>
+        // const startBot=()=>{
+        //   //  console.log();
+        //   console.log("stsart");
+        //     fetch("http://localhost:3000/start");
+        // }
+        const stopBot=()=>{
+          //  fetch("http://localhost:3000/stop")
+            window.location.replace("http://localhost:3000/stop");
+        }
+    </script>
+    <body
+        style="
+            font-family: monospace;
+            height: 100vh;
+            padding: 0 5rem;
+            margin: 0;
+            background-color: #23272f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        "
+    >
+        <div
+            style="
+                padding: 0 5rem;
+                height: 20rem;
+                border-radius: 1rem;
+                background-color: #343a46;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            "
+            class=""
+        >
+            <div class="">
+                <h1
+                    style="
+                        color: white;
+                        text-transform: uppercase;
+                    "
+                >
+                    WELCOME TO <b>MAILBOT</b>
+                </h1>
+                <div
+                    style="display: flex; justify-content: space-evenly"
+                    class=""
+                >
+                   <!-- <% if(!cron.isCronRunning()) { %>
+                    <button
+                        id="start-button"
+                        style="
+                            font-family: monospace;
+                            font-size: .98rem;
+                            font-weight: bolder;
+                            background-color: rgb(16 247 103);
+                            padding: 1rem;
+                            border-radius: 0.3rem;
+                            outline: none;
+                            border: none;
+                            color: white;
+                            cursor: pointer;
+                            box-shadow: 0rem 0rem 0.9rem #303030;
+                        "
+                        onclick="startBot()"  
+                    >
+                        START BOT
+                    </button>
+                    <% } else { %>
+                        <button
+                        style="
+                            font-family: monospace;
+                            font-size: .98rem;
+                            font-weight: bolder;
+                            background-color: rgb(133, 233, 171);
+                            padding: 1rem;
+                            border-radius: 0.3rem;
+                            outline: none;
+                            border: none;
+                            color: white;
+                            cursor: not-allowed;
+                            box-shadow: 0rem 0rem 0.9rem #303030;
+                        "
+                        disabled
+                    >
+                        START BOT
+                    </button>
+                    <% } %> -->
+                    <% if(isBotRunning&&cron.isCronRunning()) { %>
+                    <button
+                        id="stop-button"
+                        style="
+                            font-family: monospace;
+                            font-size: .98rem;
+                            font-weight: bolder;
+                            background-color: rgb(255 30 66);
+                            padding: 1rem;
+                            border-radius: 0.3rem;
+                            outline: none;
+                            border: none;
+                            color: white;
+                            cursor: pointer;
+                            box-shadow: 0rem 0rem 0.9rem #303030;
+                        "
+                         onclick="stopBot()" 
+                    >
+                        STOP BOT
+                    </button>
+                    <% } else if((!isBotRunning)&&(!cron.isCronRunning())) { %>
+                        <div
+                        style="
+                            font-family: monospace;
+                            font-size: .98rem;
+                            font-weight: bolder;
+                            background-color: rgb(150, 122, 228);
+                            padding: 1rem;
+                            border-radius: 0.3rem;
+                            outline: none;
+                            border: none;
+                            color: white;
+                            cursor: not-allowed;
+                            box-shadow: 0rem 0rem 0.9rem #303030;
+                        "
+                    >
+                         BOT STOPPED!!
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </body> 
+</html>
